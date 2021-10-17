@@ -7,7 +7,7 @@ import mongoose from 'mongoose';
 
 //const
 const app = express();
-const url = 'mongodb+srv://caportilla:654321@cluster0.0hufb.mongodb.net/test';
+const url = 'mongodb+srv://cristian:Bandit0bandit@gestion.l08kl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 const options = {
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -36,10 +36,10 @@ app.use(history());
 app.use(express.static(path.join(__dirname, 'public')));
 
 //connection BD
-mongoose.connect("mongodb+srv://caportilla:54321@cluster0.0hufb.mongodb.net/test", {
+mongoose.connect("mongodb+srv://cristian:Bandit0bandit@gestion.l08kl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-    }).then(() => console.log("Database connected!"))
+    }).then(() => console.log("Base de datos conectada!"))
     .catch((err) =>
         console.log(err));
 var db = mongoose.connection;
